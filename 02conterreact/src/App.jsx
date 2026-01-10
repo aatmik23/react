@@ -8,8 +8,11 @@ function App() {
 let [counter,setcounter] = useState(15) //give an array viraable and a function call when we have to update
  const addvalue = () =>{
   console.log("added",counter) 
-  counter = counter+1
-  setcounter(counter)
+  // react not take them as batch and it will take previous value so it wull work 4times
+  setcounter(prevcounter => prevcounter+1)
+  setcounter(prevcounter => prevcounter+1)
+  setcounter(prevcounter => prevcounter+1)
+  setcounter(prevcounter => prevcounter+1)
  }
 
  function removevalue(){
