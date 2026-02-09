@@ -14,7 +14,7 @@ function App() {
   },[password])
 
   const passwordGenrator = useCallback(() => {  //for optmization
-    let pass = ""
+    let pass = ""https://tailwindcss.com/
     let str = "ABCDEFGHIJKLabcdefijkl"
     if (number) str += "0123456789"
     if (charallowed) str += "!@#$%^&*()"
