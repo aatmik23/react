@@ -6,7 +6,8 @@ import Logoutbtn from "./header/Logoutbtn";
 import Button from "./Button";
 import Input from "./Input"
 import SignUp from "./SignUp";
+import RTE from "./RTE";
 export {
-    Header,Footer,Container,Logo,Logoutbtn,Button,Input,SignUp
+    Header,Footer,Container,Logo,Logoutbtn,Button,Input,SignUp,RTE
 
 }
