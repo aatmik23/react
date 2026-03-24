@@ -5,7 +5,8 @@ import Logo from "./Logo";
 import Logoutbtn from "./header/Logoutbtn";
 import Button from "./Button";
 import Input from "./Input"
+import SignUp from "./SignUp";
 export {
-    Header,Footer,Container,Logo,Logoutbtn,Button,Input
+    Header,Footer,Container,Logo,Logoutbtn,Button,Input,SignUp
 
 }
