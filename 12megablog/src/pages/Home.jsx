@@ -4,20 +4,20 @@ import {Container, Postcard} from '../components'
 
 
 function Home() {
-  const [posts,setPosts] = useState(null)
+  const [posts,setPosts] = useState("")
   
   useEffect(()=>{
     appwriteService.getposts().then((posts)=>{
         if(posts){
 
-            setPosts(posts.documnets)
+            setPosts(posts.documents)
         }
     })
   },[])
 
-  if(posts.lenght === 0){
+  if(posts.length === 0){
     return (
-                    <div className="w-full py-8 mt-4 text-center">
+                    <div className="w-full py-8 mt-4 text-center" >
                 <Container>
                     <div className="flex flex-wrap">
                         <div className="p-2 w-full">
@@ -38,7 +38,7 @@ function Home() {
                 <div className='flex flex-wrap'>
                     {posts.map((post) => (
                         <div key={post.$id} className='p-2 w-1/4'>
-                            <PostCard {...post} />
+                            <Postcard {...post} />
                         </div>
                     ))}
                 </div>

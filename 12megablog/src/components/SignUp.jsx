@@ -14,6 +14,8 @@ function SignUp() {
     const { register, handleSubmit } = useForm()
 
     const create = async (data) => {
+        console.log("authStatus:", authStatus)
+console.log("authentication (expected):", authentication)
         setError("")
         try {
             const userData = await authservice.createAccount(data)
@@ -56,7 +58,7 @@ function SignUp() {
                     )}
                     />
 
-                                            <Input
+                    <Input
                         label="Email: "
                         placeholder="Enter your email"
                         type="email"
